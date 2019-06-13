@@ -1,3 +1,39 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Ember Media</h2>
 
-{{outlet}}
+<div>
+  <Media @query="(min-width: 200px)" as |matches|>
+    {{#if matches}}
+      Is TINY
+    {{else}}
+      Is not tiny
+    {{/if}}
+  </Media>
+</div>
+<div>
+  <Media @query="(min-width: 640px)" as |matches|>
+    {{#if matches}}
+      Is SM
+    {{/if}}
+  </Media>
+</div>
+<div>
+  <Media @query="(min-width: 768px)" as |matches|>
+    {{#if matches}}
+      Is MD
+    {{/if}}
+  </Media>
+</div>
+<div>
+  <Media @query="(min-width: 1024px)" as |matches|>
+    {{#if matches}}
+      Is LG
+    {{/if}}
+  </Media>
+</div>
+<div>
+  <Media @query="(min-width: 1280px)" as |matches|>
+    {{#if matches}}
+      Is XL
+    {{/if}}
+  </Media>
+</div>
