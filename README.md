@@ -1,7 +1,7 @@
 ember-media
 ==============================================================================
 
-[Short description of the addon.]
+A component that allows you to render different template content based on media queries using [window.matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia).
 
 
 Compatibility
